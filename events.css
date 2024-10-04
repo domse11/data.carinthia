@@ -1,0 +1,93 @@
+body {
+    background-image: url('https://dominique-mariacher.com/wp-content/uploads/2024/10/events.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.event-item {
+    background-color: rgba(255, 255, 255, 0.93); /* Weiße Box mit 80% Transparenz */
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: calc(33.333% - 20px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+    border-radius: 10px; 
+}
+
+.event-item:hover {
+    transform: translateY(-10px);
+}
+
+.event-title {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    font-family: "Arial", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 auto 30px auto;
+    padding-bottom: 10px;
+}
+
+.event-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.event-image img {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+}
+
+
+.toggle-button {
+    margin-top: 10px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.toggle-button:hover {
+    background-color: #005bb5;
+}
+
+@media screen and (max-width: 768px) {
+    .event-item {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .event-item {
+        width: 100%;
+    }
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.5); /*50% Transparenz*/
+    border: none; 
+    padding: 20px;
+}
+
+footer p, footer a {
+    color: #333;
+}
+
+footer {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+
